@@ -8,6 +8,10 @@ $(document).ready(function() {
   });
 
   var pingpong = function(inputtedNumber) {
-    
-  }
-})
+    if (inputtedNumber >= 1) {
+      return range(inputtedNumber);
+    } else {
+      return 0
+    }
+  };
+});
