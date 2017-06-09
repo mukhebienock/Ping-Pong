@@ -4,8 +4,10 @@
 }
 #icon-bar {
   background-color: #7FFFD4;
-  width: 30%;
+  float: left;
+  height: 580px
 }
-#form {
-  text-align:
+#form1 {
+  background-color: #F0FFFF;
+  height: 580px;
 }
