@@ -1,17 +1,22 @@
 $(document).ready(function() {
   $("form#ping-pong").submit(function(event) {
     event.preventDefault();
-    var inputtednumber = parseInt($("input#inputtedNumber").val());
-    var result = pingpong(inputtedNumber);
+    var inputtedNumber = parseInt($("input#inputtedNumber").val());
 
-    $("#result").show();
+    pingpong(inputtedNumber);
+
+    pingPongNumber.forEach(function(inputtedNumber) {
+      $("#result").append("<li>" + inputtedNumber + "</li>");
+    });
   });
-
-  var pingpong = function(inputtedNumber) {
-    if (inputtedNumber >= 1) {
-      return range(inputtedNumber);
-    } else {
-      return 0
-    }
-  };
 });
+
+
+
+var pingPongNumber = [];
+
+var pingpong = function(inputtedNumber) {
+  for(var index = 1; index <= inputtedNumber; index += 1) {
+    pingPongNumber.push(index);
+  };
+};
