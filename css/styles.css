@@ -5,7 +5,8 @@
 #icon-bar {
   background-color: #7FFFD4;
   float: left;
-  height: 580px
+  height: 580px;
+  padding-left: 5em;
 }
 #form1 {
   background-color: #F0FFFF;
